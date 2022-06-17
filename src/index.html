@@ -84,6 +84,7 @@
         <label for="email">E-mail:</label>
         <input
           class="input registration_input"
+          name="email"
           type="email"
           id="email"
           placeholder="email@example.com"
@@ -93,12 +94,92 @@
         <label for="password">Password:</label>
         <input
           class="input registration_input"
+          name="password"
           type="password"
           id="password"
           required
           minlength="6"
           maxlength="10"
         ><br>
+      </fieldset>
+    </form>
+
+    <form
+      class="interesting_fact form"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+  >
+      <fieldset>
+        <legend>An interesting fact about you!</legend>
+
+        <div class="input part_of_cat">
+          <p class="about_cat">Do you love cats?</p>
+
+          <input
+            name="love_cat"
+            class="input interesting_fact"
+            type="radio"
+            id="yes"
+            value="yes"
+         >
+          <label for="yes">Yes</label>
+
+          <input
+            name="love_cat"
+            class="input interesting_fact"
+            type="radio"
+            id="no"
+            value="no"
+
+          >
+          <label for="no">No</label>
+        </div>
+
+        <label for="color">What is your favorite color?</label>
+        <input
+          class="input interesting_fact"
+          name="color"
+          type="color"
+          id="color"
+        ><br>
+
+        <label for="time_to_bed">What time do you go to bed?</label>
+        <input
+          class="input interesting_fact"
+          name="time_to_bed"
+          type="time"
+          id="time_to_bed"
+        ><br>
+
+        <label for="favorite_brand">What are your favorite brand of cars?</label>
+        <select
+          class="input interesting_fact"
+          name="favorite_brand"
+          id="favorite_brand"
+          size="4"
+          multiple
+        >
+          <option value="BMW">BMW</option>
+          <option value="Audi">Audi</option>
+          <option value="Lada">Lada</option>
+          <option value="Empty"></option>
+        </select><br>
+
+        <label for="our_rate">How do you rate our work?</label>
+        <input
+          class="input interesting_fact"
+          name="our_rate"
+          type="range"
+          id="our_rate"
+          min="0%"
+          max="100%"
+          value="0"
+        ><br>
+
+
+
+
+
       </fieldset>
 
     </form>
