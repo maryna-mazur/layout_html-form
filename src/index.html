@@ -12,7 +12,7 @@
   </head>
   <body>
     <form
-      class="personal_information"
+      class="personal_information form"
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post"
     >
@@ -24,8 +24,9 @@
           type="text"
           name="surname"
           id="surname"
-          class="surname personal_input"
+          class="input personal_input"
           required
+          autocomplete="off"
         ><br>
 
         <label for="name">Name:</label>
@@ -33,8 +34,9 @@
           type="text"
           name="name"
           id="name"
-          class="name personal_input"
+          class="input personal_input"
           required
+          autocomplete="off"
         ><br>
 
         <label for="how_old">How old are You?</label>
@@ -42,7 +44,7 @@
           type="number"
           name="how_old"
           id="how_old"
-          class="how_old personal_input"
+          class="input personal_input"
           value="12"
           size="3"
           min="1"
@@ -55,7 +57,7 @@
           type="date"
           name="date_of_birth"
           id="date_of_birth"
-          class="date_of_birth personal_input"
+          class="input personal_input"
           max="2020-12-31"
           min="1950-01-01"
         ><br>
@@ -65,12 +67,41 @@
           type="checkbox"
           name="accept_term_of_agreement"
           id="accept_term_of_agreement"
-          class="accept_term_of_agreement personal_input"
+          class="input personal_input"
           required
         ><br>
       </fieldset>
     </form>
-    
+
+    <form
+      class="registration form"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+    >
+      <fieldset>
+        <legend>Registration</legend>
+
+        <label for="email">E-mail:</label>
+        <input
+          class="input registration_input"
+          type="email"
+          id="email"
+          placeholder="email@example.com"
+          required
+        ><br>
+
+        <label for="password">Password:</label>
+        <input
+          class="input registration_input"
+          type="password"
+          id="password"
+          required
+          minlength="6"
+          maxlength="10"
+        ><br>
+      </fieldset>
+
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>

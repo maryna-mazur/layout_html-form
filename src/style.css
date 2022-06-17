@@ -1,4 +1,8 @@
 /* styles go here */
-.personal_input {
+.input {
   margin: 10px 0;
+}
+
+.form {
+  margin: 20px 0;
 }
