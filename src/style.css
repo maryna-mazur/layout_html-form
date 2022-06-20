@@ -3,18 +3,21 @@ body {
   margin: 0 10px 50px;
 }
 
-.input {
+.client_input {
   margin: 5px 0;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.2);
 }
 
 .form {
   margin: 20px 0;
 }
 
-.about_cat {
-  display: inline;
+.interesting_fact_car {
+  display: inline-block;
+  overflow-y: hidden;
 }
 
-.interesting_fact {
-  overflow-y: hidden;
+.interesting_fact_color {
+  display: inline-block;
 }

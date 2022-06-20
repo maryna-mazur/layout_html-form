@@ -12,39 +12,41 @@
   </head>
   <body>
     <form
-      class="personal_information form"
+      class="form personal_information"
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post"
     >
       <fieldset>
         <legend>Personal information</legend>
 
-        <label for="surname">Surname:</label>
+        <label class="form_field" for="surname">Surname:</label>
         <input
           type="text"
           name="surname"
           id="surname"
-          class="input personal_input"
+          class="client_input personal_input"
           required
           autocomplete="off"
+          size="15"
         ><br>
 
-        <label for="name">Name:</label>
+        <label class="form_field"  for="name">Name:</label>
         <input
           type="text"
           name="name"
           id="name"
-          class="input personal_input"
+          class="client_input personal_input"
           required
           autocomplete="off"
+          size="15"
         ><br>
 
-        <label for="how_old">How old are You?</label>
+        <label class="form_field" for="how_old">How old are You?</label>
         <input
           type="number"
           name="how_old"
           id="how_old"
-          class="input personal_input"
+          class="client_input personal_input"
           value="12"
           size="3"
           min="1"
@@ -52,38 +54,39 @@
           required
         ><br>
 
-        <label for="date_of_birth">Full date of birth:</label>
+        <label class="form_field" for="date_of_birth">Full date of birth:</label>
         <input
           type="date"
           name="date_of_birth"
           id="date_of_birth"
-          class="input personal_input"
-          max="2020-12-31"
-          min="1950-01-01"
+          class="client_input personal_input"
+          max="2009-12-31"
+          min="1920-01-01"
+          required
         ><br>
 
-        <label for="accept_term_of_agreement">I accept the term of the agreement</label>
+        <label class="form_field" for="accept_term_of_agreement">I accept the term of the agreement</label>
         <input
           type="checkbox"
           name="accept_term_of_agreement"
           id="accept_term_of_agreement"
-          class="input personal_input"
+          class="client_input personal_input"
           required
         ><br>
       </fieldset>
     </form>
 
     <form
-      class="registration form"
+      class="form registration "
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post"
     >
       <fieldset>
         <legend>Registration</legend>
 
-        <label for="email">E-mail:</label>
+        <label class="form_field" for="email">E-mail:</label>
         <input
-          class="input registration_input"
+          class="client_input registration_input"
           name="email"
           type="email"
           id="email"
@@ -91,9 +94,9 @@
           required
         ><br>
 
-        <label for="password">Password:</label>
+        <label class="form_field" for="password">Password:</label>
         <input
-          class="input registration_input"
+          class="client_input registration_input"
           name="password"
           type="password"
           id="password"
@@ -105,55 +108,56 @@
     </form>
 
     <form
-      class="interesting_fact form"
+      class="form interesting_fact"
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post"
   >
       <fieldset>
         <legend>An interesting fact about you!</legend>
 
-        <div class="input part_of_cat">
-          <p class="about_cat">Do you love cats?</p>
+        <div class="client_input part_of_cat">
+          Do you love cats?
 
-          <input
-            name="love_cat"
-            class="input interesting_fact"
-            type="radio"
-            id="yes"
-            value="yes"
-         >
-          <label for="yes">Yes</label>
+          <label class="form_field">
+            <input
+              name="love_cat"
+              class="client_input interesting_fact"
+              type="radio"
+              value="yes"
+            >
+            Yes
+          </label>
 
-          <input
-            name="love_cat"
-            class="input interesting_fact"
-            type="radio"
-            id="no"
-            value="no"
-
-          >
-          <label for="no">No</label>
+          <label class="form_field">
+            <input
+              name="love_cat"
+              class="client_input interesting_fact"
+              type="radio"
+              value="no"
+            >
+            No
+          </label>
         </div>
 
-        <label for="color">What is your favorite color?</label>
+        <label class="form_field" for="color">What is your favorite color?</label>
         <input
-          class="input interesting_fact"
+          class="client_input interesting_fact_color"
           name="color"
           type="color"
           id="color"
         ><br>
 
-        <label for="time_to_bed">What time do you go to bed?</label>
+        <label class="form_field" for="time_to_bed">What time do you go to bed?</label>
         <input
-          class="input interesting_fact"
+          class="client_input interesting_fact"
           name="time_to_bed"
           type="time"
           id="time_to_bed"
         ><br>
 
-        <label for="favorite_brand">What are your favorite brand of cars?</label>
+        <label class="form_field" for="favorite_brand">What are your favorite brand of cars?</label>
         <select
-          class="input interesting_fact"
+          class="client_input interesting_fact_car"
           name="favorite_brand"
           id="favorite_brand"
           size="4"
@@ -166,39 +170,40 @@
           <option value=" "></option>
         </select><br>
 
-        <label for="our_rate">How do you rate our work?</label>
+        <label class="form_field" for="our_rate">How do you rate our work?</label>
         <input
-          class="input interesting_fact"
+          class="client_input interesting_fact"
           name="our_rate"
           type="range"
           id="our_rate"
-          min="0%"
-          max="100%"
+          min="0"
+          max="100"
           value="0"
         ><br>
       </fieldset>
     </form>
 
     <form
-      class="additional_info form"
+      class="form additional_info"
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post"
     >
       <fieldset>
         <legend>Additional info:</legend>
 
-        <label for="comments">Comments:</label>
+        <label class="form_field" for="comments">Comments:</label>
         <textarea
           name="comments"
           id="comments"
           rows="2"
-          class="input additional_info_textarea"
+          class="client_input additional_info_textarea"
+          autocomplete="off"
         >
         </textarea><br>
 
-        <label for="recommend_us">Would you recommend us?</label>
+        <label class="form_field" for="recommend_us">Would you recommend us?</label>
         <select
-          class="input additional_info_select"
+          class="client_input additional_info_select"
           name="recommend_us"
           id="recommend_us"
         >
@@ -208,7 +213,7 @@
       </fieldset>
     </form>
 
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application">
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" class="form button">
       <button type="submit"> Submit</button>
     </form>
 
