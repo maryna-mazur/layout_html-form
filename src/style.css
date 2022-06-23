@@ -1,19 +1,12 @@
 /* styles go here */
-body {
-  padding: 0;
-  border: 0;
+fieldset {
+  padding-bottom: 0;
 }
 
 .form {
-  margin-bottom: 20px;
-}
-
-.interesting_fact_color {
-  display: inline-block;
+  margin-top: 20px;
 }
 
 .form_field {
-  margin-top: 0;
   margin-bottom: 10px;
-  display: inline-block;
 }

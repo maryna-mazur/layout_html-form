@@ -12,69 +12,77 @@
   </head>
   <body>
     <form
-      class="form personal_information"
+      class="personal_information"
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post"
     >
       <fieldset>
         <legend>Personal information</legend>
 
-        <label class="form_field" for="surname">Surname:</label>
-        <input
-          type="text"
-          name="surname"
-          id="surname"
-          class="client_input personal_input"
-          required
-          autocomplete="off"
-          size="15"
-        ><br>
+        <div class="form_field first_form_field">
+          <label  for="surname">Surname:</label>
+          <input
+            type="text"
+            name="surname"
+            id="surname"
+            class="client_input personal_input"
+            required
+            autocomplete="off"
+          ><br>
+        </div>
 
-        <label class="form_field"  for="name">Name:</label>
-        <input
-          type="text"
-          name="name"
-          id="name"
-          class="client_input personal_input"
-          required
-          autocomplete="off"
-          size="15"
-        ><br>
+        <div class="form_field">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="client_input personal_input"
+            required
+            autocomplete="off"
+          ><br>
+        </div>
 
-        <label class="form_field" for="how_old">How old are You?</label>
-        <input
-          type="number"
-          name="how_old"
-          id="how_old"
-          class="client_input personal_input"
-          value="12"
-          size="3"
-          min="1"
-          max="100"
-          required
-        ><br>
+        <div class="form_field">
+          <label for="how_old">How old are You?</label>
+          <input
+            type="number"
+            name="how_old"
+            id="how_old"
+            class="client_input personal_input"
+            value="12"
+            size="3"
+            min="1"
+            max="100"
+            required
+          ><br>
+        </div>
 
-        <label class="form_field" for="date_of_birth">Full date of birth:</label>
-        <input
-          type="date"
-          name="date_of_birth"
-          id="date_of_birth"
-          class="client_input personal_input"
-          max="2009-12-31"
-          min="1920-01-01"
-          required
-        ><br>
+        <div class="form_field">
+          <label for="date_of_birth">Full date of birth:</label>
+          <input
+            type="date"
+            name="date_of_birth"
+            id="date_of_birth"
+            class="client_input personal_input"
+            max="2009-12-31"
+            min="1920-01-01"
+            required
+          ><br>
+        </div>
 
-        <label class="form_field" for="accept_term_of_agreement">
-          I accept the term of the agreement
-        </label>
-        <input
-          type="checkbox"
-          name="accept_term_of_agreement"
-          id="accept_term_of_agreement"
-          class="client_input personal_input"
-          required
-        ><br>
+        <div class="form_field">
+          <label for="accept_term_of_agreement">
+            I accept the term of the agreement
+          </label>
+          <input
+            type="checkbox"
+            name="accept_term_of_agreement"
+            id="accept_term_of_agreement"
+            class="client_input personal_input"
+            required
+          ><br>
+        </div>
       </fieldset>
     </form>
 
@@ -86,26 +94,30 @@
       <fieldset>
         <legend>Registration</legend>
 
-        <label class="form_field" for="email">E-mail:</label>
-        <input
-          class="client_input registration_input"
-          name="email"
-          type="email"
-          id="email"
-          placeholder="email@example.com"
-          required
-        ><br>
+        <div class="form_field">
+          <label for="email">E-mail:</label>
+          <input
+            class="client_input registration_input"
+            name="email"
+            type="email"
+            id="email"
+            placeholder="email@example.com"
+            required
+          ><br>
+        </div>
 
-        <label class="form_field" for="password">Password:</label>
-        <input
-          class="client_input registration_input"
-          name="password"
-          type="password"
-          id="password"
-          required
-          minlength="6"
-          maxlength="10"
-        ><br>
+        <div class="form_field">
+          <label for="password">Password:</label>
+          <input
+            class="client_input registration_input"
+            name="password"
+            type="password"
+            id="password"
+            required
+            minlength="6"
+            maxlength="10"
+          ><br>
+        </div>
       </fieldset>
     </form>
 
@@ -117,75 +129,83 @@
       <fieldset>
         <legend>An interesting fact about you!</legend>
 
-        <div class="client_input part_of_cat">
-          Do you love cats?
-
-          <label class="form_field">
+        <div class="form_field">Do you love cats?
+          <label>
             <input
               name="love_cat"
               class="client_input interesting_fact"
               type="radio"
               value="yes"
             >
-            Yes
+              Yes
           </label>
 
-          <label class="form_field">
+
+          <label>
             <input
-              name="love_cat"
-              class="client_input interesting_fact"
-              type="radio"
-              value="no"
+                name="love_cat"
+                class="client_input interesting_fact"
+                type="radio"
+                value="no"
             >
-            No
+              No
           </label>
         </div>
 
-        <label class="form_field" for="color">What is your favorite color?</label>
-        <input
-          class="client_input interesting_fact_color"
-          name="color"
-          type="color"
-          id="color"
-        ><br>
+        <div class="form_field">
+          <label for="color">What is your favorite color?</label>
+          <input
+            class="client_input interesting_fact_color"
+            name="color"
+            type="color"
+            id="color"
+          ><br>
+        </div>
 
-        <label class="form_field" for="time_to_bed">
-          What time do you go to bed?
-        </label>
-        <input
-          class="client_input interesting_fact"
-          name="time_to_bed"
-          type="time"
-          id="time_to_bed"
-        ><br>
+        <div class="form_field">
+          <label for="time_to_bed">
+            What time do you go to bed?
+          </label>
+          <input
+            class="client_input interesting_fact"
+            name="time_to_bed"
+            type="time"
+            id="time_to_bed"
+          ><br>
+        </div>
 
-        <label class="form_field" for="favorite_brand">
-          What are your favorite brand of cars?
-        </label>
-        <select
-          class="client_input interesting_fact_car"
-          name="favorite_brand"
-          id="favorite_brand"
-          size="4"
-          multiple
-          required
-        >
-          <option value="BMW">BMW</option>
-          <option value="Audi">Audi</option>
-          <option value="Lada">Lada</option>
-          <option value=" "></option>
-        </select><br>
+        <div class="form_field">
+          <label for="favorite_brand">
+            What are your favorite brand of cars?
+          </label>
 
-        <label class="form_field" for="our_rate">How do you rate our work?</label>
-        <input
-          class="client_input interesting_fact"
-          name="our_rate"
-          type="range"
-          id="our_rate"
-          min="0"
-          max="100"
-          value="0"
-        ><br>
+          <select
+            class="client_input interesting_fact_car"
+            name="favorite_brand"
+            id="favorite_brand"
+            size="4"
+            multiple
+            required
+          >
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+            <option value=" "></option>
+          </select><br>
+        </div>
+
+        <div class="form_field">
+          <label for="our_rate">How do you rate our work?</label>
+          <input
+            class="client_input interesting_fact"
+            name="our_rate"
+            type="range"
+            id="our_rate"
+            min="0"
+            max="100"
+            value="0"
+          ><br>
+        </div>
       </fieldset>
     </form>
 
@@ -197,25 +217,29 @@
       <fieldset>
         <legend>Additional info:</legend>
 
-        <label class="form_field" for="comments">Comments:</label>
-        <textarea
-          name="comments"
-          id="comments"
-          rows="2"
-          class="client_input additional_info_textarea"
-          autocomplete="off"
-        >
-        </textarea><br>
+        <div class="form_field">
+          <label for="comments">Comments:</label>
+          <textarea
+            name="comments"
+            id="comments"
+            rows="2"
+            class="client_input additional_info_textarea"
+            autocomplete="off"
+          >
+          </textarea><br>
+        </div>
 
-        <label class="form_field" for="recommend_us">Would you recommend us?</label>
-        <select
-          class="client_input additional_info_select"
-          name="recommend_us"
-          id="recommend_us"
-        >
-          <option value="yes" selected>yes</option>
-          <option value="no">no</option>
-        </select><br>
+        <div class="form_field">
+          <label for="recommend_us">Would you recommend us?</label>
+          <select
+            class="client_input additional_info_select"
+            name="recommend_us"
+            id="recommend_us"
+          >
+            <option value="yes" selected>yes</option>
+            <option value="no">no</option>
+          </select><br>
+        </div>
       </fieldset>
     </form>
 
